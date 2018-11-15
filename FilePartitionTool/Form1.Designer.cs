@@ -39,6 +39,7 @@
             this.button_Start = new System.Windows.Forms.Button();
             this.button_Save = new System.Windows.Forms.Button();
             this.button_DelRuleFile = new System.Windows.Forms.Button();
+            this.button_Clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_DirPathList
@@ -61,6 +62,7 @@
             this.listBox_DirList.Name = "listBox_DirList";
             this.listBox_DirList.Size = new System.Drawing.Size(193, 244);
             this.listBox_DirList.TabIndex = 3;
+            this.listBox_DirList.SelectedIndexChanged += new System.EventHandler(this.listBox_DirList_SelectedIndexChanged);
             this.listBox_DirList.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox_DirList_DragDrop);
             this.listBox_DirList.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox_DirList_DragEnter);
             // 
@@ -160,11 +162,23 @@
             this.button_DelRuleFile.UseVisualStyleBackColor = true;
             this.button_DelRuleFile.Click += new System.EventHandler(this.button_DelRuleFile_Click);
             // 
+            // button_Clear
+            // 
+            this.button_Clear.Font = new System.Drawing.Font("新細明體", 16F);
+            this.button_Clear.Location = new System.Drawing.Point(549, 176);
+            this.button_Clear.Name = "button_Clear";
+            this.button_Clear.Size = new System.Drawing.Size(112, 44);
+            this.button_Clear.TabIndex = 7;
+            this.button_Clear.Text = "清除目錄";
+            this.button_Clear.UseVisualStyleBackColor = true;
+            this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(727, 301);
+            this.Controls.Add(this.button_Clear);
             this.Controls.Add(this.button_Start);
             this.Controls.Add(this.listBox_RuleFile);
             this.Controls.Add(this.listBox_RuleList);
@@ -196,6 +210,7 @@
         private System.Windows.Forms.Button button_Start;
         private System.Windows.Forms.Button button_Save;
         private System.Windows.Forms.Button button_DelRuleFile;
+        private System.Windows.Forms.Button button_Clear;
     }
 }
 

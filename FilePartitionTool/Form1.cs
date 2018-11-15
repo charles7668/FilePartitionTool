@@ -248,5 +248,15 @@ namespace FilePartitionTool
                 LoadRuleFile();
             }
         }
+
+        private void listBox_DirList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Clear_Click(object sender, EventArgs e)
+        {
+            listBox_DirList.Items.Clear();
+        }
     }
 }
