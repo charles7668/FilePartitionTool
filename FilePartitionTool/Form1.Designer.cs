@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
             this.label_DirPathList = new System.Windows.Forms.Label();
             this.listBox_DirList = new System.Windows.Forms.ListBox();
             this.label_RuleList = new System.Windows.Forms.Label();
@@ -169,7 +170,7 @@
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Size = new System.Drawing.Size(112, 44);
             this.button_Clear.TabIndex = 7;
-            this.button_Clear.Text = "清除目錄";
+            this.button_Clear.Text = "Clean Dir";
             this.button_Clear.UseVisualStyleBackColor = true;
             this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click);
             // 
@@ -190,6 +191,7 @@
             this.Controls.Add(this.label_RuleList);
             this.Controls.Add(this.listBox_DirList);
             this.Controls.Add(this.label_DirPathList);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Main";
             this.Text = "FilePartitionTool";
             this.Load += new System.EventHandler(this.Form_Main_Load);
