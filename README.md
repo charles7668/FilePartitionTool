@@ -1,5 +1,7 @@
 # FilePartitionTool
 
+使用方式：將資料夾拖曳至DirectoryList內，GO為開始
+
 根據副檔名將檔案分類
 
 可建立分類規則 ex: txt,textfile 將txt分類至textfile文件夾 
